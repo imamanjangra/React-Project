@@ -8,6 +8,7 @@ import Dashboard from './Components/Dashboard.jsx'
 import Add from './Components/Add.jsx'
 import About from './Components/About.jsx'
 import History from './Components/History.jsx'
+import { ExpenseProvider } from './Context/Expense_Context.jsx'
 
 
 
@@ -24,6 +25,8 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ExpenseProvider  >
     <RouterProvider router={router}/>
+    </ExpenseProvider>
   </StrictMode>,
 )
