@@ -13,7 +13,7 @@ export function ExpenseProvider({ children }) {
   };
 
   return (
-    <Expense_Conntext.Provider value={{ Expense, addValue }}>
+    <Expense_Conntext.Provider value={{ Expense, addValue , setExpense }}>
       {children}
     </Expense_Conntext.Provider>
   );

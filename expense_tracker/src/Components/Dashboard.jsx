@@ -13,7 +13,8 @@ import {
   Pie,
   Cell,
 } from "recharts";
-import { useAsyncError } from "react-router-dom";
+import Transactions from "./Transactions";
+
 
 function Dashboard() {
   const { Expense } = useExpense();
@@ -158,32 +159,7 @@ function Dashboard() {
 
       {/* === Transactions Section === */}
       <div className="text-left">
-        <h3 className="text-2xl font-semibold text-gray-800 mb-4">Recent Transactions</h3>
-
-        {Expense.map((item, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row justify-between items-start md:items-center p-4 mb-3 rounded-xl shadow-md border-l-8
-              ${item.Type === "Income" ? "border-green-500 bg-green-50" : "border-red-500 bg-red-50"}
-            `}
-          >
-            {/* Left: Title + Category */}
-            <div>
-              <h4 className="font-medium text-gray-800 text-lg">{item.Title}</h4>
-              <p className="text-sm text-gray-500">{item.Category}</p>
-            </div>
-
-            {/* Middle: Date */}
-            <div className="text-sm text-gray-400 mt-1 md:mt-0">
-              {new Date(item.Date || Date.now()).toLocaleDateString()}
-            </div>
-
-            {/* Right: Amount */}
-            <div className={`font-bold mt-2 md:mt-0 ${item.Type === "Income" ? "text-green-700" : "text-red-700"}`}>
-              {item.Type === "Income" ? "+" : "-"}₹{item.Amount} ({item.Type})
-            </div>
-          </div>
-        ))}
+       <Transactions/>
       </div>
     </div>
   );
