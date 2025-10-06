@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 w-full fixed bottom-0 left-0 z-50">
+    <footer className="bg-gray-900 text-gray-300 w-full mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         {/* About Section */}
