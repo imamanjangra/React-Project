@@ -66,6 +66,7 @@ function Add() {
           className="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
         >
           <option>Select Category</option>
+          <option>Income</option>
           <option>Food</option>
           <option>Transport</option>
           <option>Shopping</option>
