@@ -8,9 +8,12 @@ export const useExpense = () => useContext(Expense_Conntext);
 export function ExpenseProvider({ children }) {
   const [Expense, setExpense] = useState(() => {
     const saved = localStorage.getItem("Expense")
-
+  try {
     return saved !== "undefined" ? JSON.parse(saved) : [];
- 
+  } catch {
+    return [];
+  }
+
   }) ;
 
   const addValue = (input) => {

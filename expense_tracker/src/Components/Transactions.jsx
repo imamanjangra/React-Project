@@ -37,7 +37,7 @@ function Transactions() {
           Recent Transactions
         </h3>
 
-        {Expense.map((item, index) => (
+        {Expense &&Expense.map((item, index) => (
           <div
             key={index}
             className={`flex flex-col md:flex-row justify-between items-start md:items-center p-4 mb-3 rounded-xl shadow-md border-l-8
