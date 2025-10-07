@@ -72,11 +72,11 @@ function Dashboard() {
 
   }, [Expense]);
 
-  // Pie chart data
+ 
   
   return (
     <div className="max-w-6xl mx-auto mt-10 p-6">
-      {/* === Summary Cards === */}
+     
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         <div className="bg-green-100 p-6 rounded-2xl shadow text-center">
           <h3 className="text-xl font-semibold text-green-700">Total Income</h3>
@@ -94,9 +94,9 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* === Charts Section === */}
+     
       <div className="grid md:grid-cols-2 gap-6 mb-10">
-        {/* Bar Chart */}
+       
         <div className="bg-white p-4 rounded-2xl shadow">
           <h3 className="text-lg font-semibold mb-4 text-gray-700 text-center">Income vs Expense (Bar Chart)</h3>
           <div style={{ width: "100%", height: 300 }}>
@@ -119,7 +119,7 @@ function Dashboard() {
           </div>
         </div>
 
-        {/* Pie Chart */}
+      
         <div className="bg-white p-4 rounded-2xl shadow">
           <h3 className="text-lg font-semibold mb-4 text-gray-700 text-center">Income vs Expense (Pie Chart)</h3>
           <div style={{ width: "100%", height: 300 }}>
@@ -157,7 +157,7 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* === Transactions Section === */}
+     
       <div className="text-left">
        <Transactions/>
       </div>

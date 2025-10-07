@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useExpense } from "../Context/Expense_Context";
+import { useNavigate } from "react-router-dom";
 
 function Add() {
   const { addValue } = useExpense();
+  const navigate = useNavigate();
 
   const [value, setValue] = useState({
     Title: "",
@@ -11,7 +13,6 @@ function Add() {
     Category: ""
   });
 
-  console.log(value)
   const HandleChange = (e) => {
     const inputName = e.target.name;
     const inputValue = e.target.value;
@@ -21,8 +22,25 @@ function Add() {
 
   const submitBtn = (e) => {
     e.preventDefault();
-    addValue(value); // add to context
+
+    if (value.Amount === "") {
+      alert("Enter Amount!");
+      return;
+    }
+    if (value.Title === "") {
+      alert("Enter Title!");
+      return;
+    }
+    if (value.Category === "" || value.Category === "Select Category") {
+      alert("Choose a category!");
+      return;
+    }
+
+    addValue(value);
+
     setValue({ Title: "", Amount: "", Type: "Expense", Category: "" });
+
+    navigate("/");
   };
 
   return (
@@ -77,7 +95,7 @@ function Add() {
           type="submit"
           className="bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
         >
-          Add Expense
+          Save
         </button>
       </form>
     </div>

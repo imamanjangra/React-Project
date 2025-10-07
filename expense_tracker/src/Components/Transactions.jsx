@@ -2,9 +2,11 @@ import { useState } from "react";
 import { useExpense } from "../Context/Expense_Context";
 
 function Transactions() {
-  const { Expense , setExpense } = useExpense();
+  const { Expense , setExpense , deleteItem} = useExpense();
   const [editIndex, setEditIndex] = useState(null);
   const [updatedItem , setupdatedItem] = useState({})
+
+  
 
   const handleEdit = (index ,item) => {
     setEditIndex(index)
@@ -24,6 +26,9 @@ function Transactions() {
   setExpense(updatedList);
   setEditIndex(null); 
   }
+
+
+ 
 
   return (
     <>
@@ -46,7 +51,7 @@ function Transactions() {
             {editIndex === index ? (
               <>
               <div className="flex flex-col md:flex-row gap-3 w-full">
-              {/* Title Input */}
+             
               <input
                 type="text"
                 name="Title"
@@ -56,7 +61,7 @@ function Transactions() {
                 placeholder="Title"
               />
 
-              {/* Category Input */}
+              
               <input
                 type="text"
                 name="Category"
@@ -66,7 +71,7 @@ function Transactions() {
                 placeholder="Category"
               />
 
-              {/* Type Select */}
+              
               <select
                 name="Type"
                 value={updatedItem.Type}
@@ -77,7 +82,7 @@ function Transactions() {
                 <option value="Expense">Expense</option>
               </select>
 
-              {/* Amount Input */}
+             
               <input
                 type="number"
                 name="Amount"
@@ -87,7 +92,7 @@ function Transactions() {
                 placeholder="Amount"
               />
 
-              {/* Save Button */}
+              
               <button
                 onClick={() => handleSave(index)}
                 className="bg-green-500 text-white px-4 py-1 rounded-md hover:bg-green-600 transition"
@@ -98,7 +103,7 @@ function Transactions() {
               </>
             ) : (
               <>
-                {/* Normal view */}
+               
                 <div>
                   <h4 className="font-medium text-gray-800 text-lg">
                     {item.Title}
@@ -129,7 +134,9 @@ function Transactions() {
                     Edit
                   </button>
 
-                  <button className="px-3 py-1 rounded-md bg-red-500 text-white text-sm hover:bg-red-600 transition">
+                  <button
+                  onClick={() => deleteItem(index)}
+                  className="px-3 py-1 rounded-md bg-red-500 text-white text-sm hover:bg-red-600 transition">
                     Delete
                   </button>
                 </div>
