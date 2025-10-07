@@ -19,6 +19,7 @@ import Transactions from "./Transactions";
 function Dashboard() {
   const { Expense } = useExpense();
   const [Income, setIncome] = useState(0);
+
   const [Ex, setEx] = useState(0);
   const [i , setI] = useState(0);
   const [F , setF] = useState(0);
@@ -37,7 +38,7 @@ function Dashboard() {
     let cat_O = 0
 
 
-    Expense.forEach((item) => {
+  Expense && Expense.forEach((item) => {
       if (item.Type === "Income") totalIncome += Number(item.Amount);
       else totalExpense += Number(item.Amount);
     });
