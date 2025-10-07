@@ -44,7 +44,7 @@ function Dashboard() {
     });
 
 
-    Expense.forEach((item) => {
+    (Expense || []).forEach((item) => {
       if(item.Category == "Income"){
         cat_i += Number(item.Amount)
       }
