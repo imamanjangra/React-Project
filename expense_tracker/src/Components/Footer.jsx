@@ -29,7 +29,7 @@ function Footer() {
         <div>
           <h3 className="text-white font-bold text-lg mb-3">Contact</h3>
           <p className="text-gray-400 text-sm">Email: imamanjangra@email.com</p>
-          <p className="text-gray-400 text-sm">Phone: +91 9468255640</p>
+         
         </div>
 
         {/* Social Links */}
