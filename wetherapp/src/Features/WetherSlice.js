@@ -10,7 +10,7 @@ export const WetherSlice = createSlice({
     reducers : {
         addcity : (state , action) => {
             const wet_r = {
-                text : action.payload
+            text : action.payload
             }
             state.wether.text =wet_r.text
         }
