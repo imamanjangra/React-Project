@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="qTbkx0kXrFyqjD3-M7lF" name="Page-1">
+        <mxGraphModel dx="898" dy="1566" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="BY city name&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="58" y="-12" width="92" height="26" as="geometry"/>
+                </mxCell>
+                <UserObject label="http://api.openweathermap.org/data/2.5/forecast?q=Delhi&amp;appid=2a591f52675ebfba308e143ffe71bbca" link="http://api.openweathermap.org/data/2.5/forecast?q=Delhi&amp;appid=2a591f52675ebfba308e143ffe71bbca" id="4">
+                    <mxCell style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                        <mxGeometry x="196" y="-31" width="412" height="55" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="5" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="144" y="1" as="sourcePoint"/>
+                        <mxPoint x="186" y="0.5" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="191" y="109" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="BY lagitude" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="42" y="96" width="79" height="26" as="geometry"/>
+                </mxCell>
+                <UserObject label="http://api.openweathermap.org/data/2.5/forecast?lat=28.6139&amp;lon=77.2090&amp;appid=2a591f52675ebfba308e143ffe71bbca" link="http://api.openweathermap.org/data/2.5/forecast?lat=28.6139&amp;lon=77.2090&amp;appid=2a591f52675ebfba308e143ffe71bbca" id="9">
+                    <mxCell style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                        <mxGeometry x="200" y="67" width="424" height="72" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="10" value="BY Zip code&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="23" y="200" width="86" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="113" y="213" as="sourcePoint"/>
+                        <mxPoint x="181" y="212.5" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="http://api.openweathermap.org/data/2.5/forecast?zip=110001,in&amp;appid=2a591f52675ebfba308e143ffe71bbca" link="http://api.openweathermap.org/data/2.5/forecast?zip=110001,in&amp;appid=2a591f52675ebfba308e143ffe71bbca" id="12">
+                    <mxCell style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                        <mxGeometry x="196" y="188" width="433" height="66" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="14" style="edgeStyle=none;html=1;" edge="1" parent="1" source="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="195" y="-121" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Wether API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="74" y="-134" width="78" height="26" as="geometry"/>
+                </mxCell>
+                <UserObject label="https://api.openweathermap.org/data/2.5/weather?q=${city_name}&amp;appid=${api_key}" link="https://api.openweathermap.org/data/2.5/weather?q=${city_name}&amp;appid=${api_key}" id="15">
+                    <mxCell style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                        <mxGeometry x="197" y="-154" width="427" height="67" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="17" style="edgeStyle=none;html=1;" edge="1" parent="1" source="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="271.6666564941406" y="-376" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Wether API Key&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="107" y="-389" width="102" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="e15470177d852cecd48b92ec3dbec9a0" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="278" y="-406" width="261" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;" edge="1" parent="1" source="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="273.6666564941406" y="-284" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Forcast API Key 7days&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="91" y="-297" width="139" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;table style=&quot;border-spacing: 0px; border-collapse: collapse; max-width: 100%; background-color: rgb(255, 255, 255); color: rgb(72, 72, 74); font-family: Arial, sans-serif; font-size: 14px; text-align: start;&quot; class=&quot;material_table api-keys&quot;&gt;&lt;tbody style=&quot;box-sizing: border-box;&quot;&gt;&lt;tr style=&quot;box-sizing: border-box;&quot;&gt;&lt;td style=&quot;box-sizing: border-box; padding: 8pt 24pt 8pt 8pt; border-top: 1px solid rgb(242, 242, 242); vertical-align: middle;&quot;&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; padding: 9.5px; margin: 0px; line-height: 1.42857; color: rgb(72, 72, 74); word-break: break-all; overflow-wrap: break-word; background-color: rgb(242, 242, 242); border: 1px solid rgb(242, 242, 242); border-radius: 4pt;&quot;&gt;2a591f52675ebfba308e143ffe71bbca&lt;/pre&gt;&lt;/td&gt;&lt;td style=&quot;box-sizing: border-box; padding: 8pt 24pt 8pt 0px; border-top: 1px solid rgb(242, 242, 242); vertical-align: middle;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="-314" width="376" height="65" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
