@@ -9,7 +9,7 @@
                 </mxCell>
                 <UserObject label="http://api.openweathermap.org/data/2.5/forecast?q=Delhi&amp;appid=2a591f52675ebfba308e143ffe71bbca" link="http://api.openweathermap.org/data/2.5/forecast?q=Delhi&amp;appid=2a591f52675ebfba308e143ffe71bbca" id="4">
                     <mxCell style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                        <mxGeometry x="196" y="-31" width="412" height="55" as="geometry"/>
+                        <mxGeometry x="197" y="-24" width="412" height="55" as="geometry"/>
                     </mxCell>
                 </UserObject>
                 <mxCell id="5" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
