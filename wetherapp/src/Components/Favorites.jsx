@@ -22,12 +22,12 @@ function Favorites() {
     setCities(cities.filter((item) => item !== city));
   };
 
-  useEffect(() => {
-    const wetherLocal = JSON.parse(localStorage.getItem("wether"));
-    if ( wetherLocal.length > 0) {
-      setCities(wetherLocal);
-    }
-  }, []);
+ useEffect(() => {
+  const wetherLocal = JSON.parse(localStorage.getItem("wether")) || [];
+  if (wetherLocal.length > 0) {
+    setCities(wetherLocal);
+  }
+}, []);
 
   useEffect(() => {
     localStorage.setItem("wether", JSON.stringify(cities));
