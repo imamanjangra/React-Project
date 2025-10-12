@@ -11,9 +11,18 @@ function ForecasteHook(){
      useEffect(() => {
         fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${wether.text}&appid=${api_key}`)
         .then(resp => resp.json())
-        .then(resp => setForcat_Api(resp))
-     } , [wether.text])
+        .then(resp => {
+            if(resp.cod == "200"){
+                setForcat_Api(resp)
+            }
+            else{
+                alert("City name not found. Please enter a valid city name!")
+                
+            }
+        })
 
+    } , [wether.text])
+    
     return(Forcst_Api)
 }
 
