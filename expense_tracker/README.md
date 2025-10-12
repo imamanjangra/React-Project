@@ -1,16 +1,30 @@
-# React + Vite
+<h1 align="center">💰 Expense Tracker</h1>
+<p align="center">
+  Track your daily income and expenses with a simple React app.
+  <br>
+  Built with <b>React</b> and <b>Tailwind CSS</b>.
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<hr>
 
-Currently, two official plugins are available:
+<h2>Features</h2>
+<ul>
+  <li>Add and manage income/expense transactions.</li>
+  <li>View total income, total expense, and balance.</li>
+  <li>Maintain recent transactions with title, category, date, and amount.</li>
+  <li>Edit or delete transactions easily.</li>
+  <li>Organize expenses into categories like Food, Transport, Shopping, Others.</li>
+  <li>Responsive and clean interface.</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p><a href="https://react-project-rosy-tau-25.vercel.app/" target="_blank">🔗 Live Demo</a></p>
 
-## React Compiler
+<hr>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<h2>Purpose</h2>
+<ul>
+  <li>Practice React components and hooks</li>
+  <li>Learn state management with Redux</li>
+  <li>Build interactive and responsive UI</li>
+</ul>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
