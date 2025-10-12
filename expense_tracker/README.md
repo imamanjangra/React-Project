@@ -28,4 +28,3 @@
   <li>Build interactive and responsive UI</li>
 </ul>
 
-<p align="center">⭐ Star this repository if you like this project!</p>
