@@ -10,7 +10,7 @@ function RecipeDetails() {
         <h3 className="font-semibold text-gray-200">Ingredients:</h3>
         <ul className="list-disc list-inside mb-4 text-gray-300">
           <li>Spaghetti</li>
-          <li>Tomato</li>
+          <li>Tomatos</li>
           <li>Garlic</li>
           <li>Olive oil</li>
           <li>Chili flakes</li>
