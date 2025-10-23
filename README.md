@@ -1,4 +1,4 @@
-<h1 align="center">🚀 My React Practice Projects</h1>
+<h1 align="center">🚀 My React Practice Project</h1>
 <p align="center">
   A collection of mini React projects built with <b>React, Redux, and Tailwind CSS</b>.
   <br>
