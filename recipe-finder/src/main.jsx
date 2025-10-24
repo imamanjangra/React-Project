@@ -16,8 +16,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout/>}>
       <Route path='/' element={<Home/>}/>
       <Route path='/favorites' element={<Favorites/>}/>
-      <Route path='/RecipeDetails' element={<RecipeDetails/>}/>
-
+      <Route path='/Recipe/:name' element={<RecipeDetails/>}/>
     </Route>
   )
 )

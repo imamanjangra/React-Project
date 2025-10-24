@@ -1,6 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 function RecipeDetails() {
+
+  const {name} = useParams();
+  
+
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-4">Recipe Details</h1>

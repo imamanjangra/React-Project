@@ -6,12 +6,7 @@ import { addDish } from '../Feature/RecipeSlice';
 import SearchAPI from '../Hooks/SearchAPI';
 
 function Home() {
-  const recipes = [
-    { title: 'Spaghetti Arrabiata', image: 'https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg' },
-    { title: 'Chicken Curry', image: 'https://www.themealdb.com/images/media/meals/1529444830.jpg' },
-    { title: 'Greek Salad', image: 'https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg' },
-    { title: 'Pancakes', image: 'https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg' },
-  ];
+
 
 
   const [value , setValue] = useState(""); 
@@ -42,9 +37,7 @@ function Home() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {recipes.map((r, index) => (
-          <RecipeCard key={index} title={r.title} image={r.image} />
-        ))}
+        <RecipeCard/>
       </div>
     </div>
   );

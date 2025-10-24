@@ -1,6 +1,12 @@
 import React from 'react';
 
+
+
+
 function RecipeCard({ title, image }) {
+  
+  
+  
   return (
     <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
       <img className="w-full h-48 object-cover" src={image} alt={title} />
