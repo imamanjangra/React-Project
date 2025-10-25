@@ -17,6 +17,7 @@ function RecipeCard() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full ">
       {recepes.map((data, i) => (
+        
         <div
           className="bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer w-full"
           key={i} 
@@ -31,7 +32,7 @@ function RecipeCard() {
             <h2 className="font-semibold text-lg text-gray-100 truncate"
             
             >
-              Recipe Title {i + 1}
+            {"ok"+data[0].meals[0]?.strMeal}
             </h2>
             <span className="text-yellow-400 text-xl cursor-pointer">⭐</span>
           </div>
