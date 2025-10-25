@@ -14,4 +14,4 @@ function SearchAPI(){
     return(response)
 }
 
-export default SearchAPI    
+export default SearchAPI
